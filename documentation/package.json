@@ -10,6 +10,8 @@
     "node": ">=16.10.0"
   },
   "dependencies": {
+    "docusaurus-plugin-openapi-docs": "^1.2.0",
+    "docusaurus-theme-openapi-docs": "^1.2.0",
     "raw-loader": "^4.0.2",
     "remark-code-import": "^0.3.0",
     "remark-import-partial": "^0.0.2"

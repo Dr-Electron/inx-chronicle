@@ -8,6 +8,10 @@
 
  Create as many sidebars as you want.
  */
+const core_api_sidebar = require('./docs/reference/apis/core/sidebar');
+const explorer_api_sidebar = require('./docs/reference/apis/explorer/sidebar');
+const analytics_api_sidebar = require('./docs/reference/apis/analytics/sidebar');
+const indexer_api_sidebar = require('./docs/reference/apis/indexer/sidebar');
 
 module.exports = {
   docs: [
@@ -39,9 +43,30 @@ module.exports = {
           label: "Authentication",
         },
         {
-          type: "doc",
-          id: "reference/api",
-          label: "API",
+          type: "category",
+          label: "APIs",
+          items: [
+            {
+              type: "category",
+              label: "Core",
+              items: core_api_sidebar,
+            },
+            {
+              type: "category",
+              label: "Explorer",
+              items: explorer_api_sidebar,
+            },
+            {
+              type: "category",
+              label: "Analytics",
+              items: analytics_api_sidebar,
+            },
+            {
+              type: "category",
+              label: "Indexer",
+              items: indexer_api_sidebar,
+            },
+          ],
         },
         {
           type: "doc",
